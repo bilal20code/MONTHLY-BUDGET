@@ -1,0 +1,327 @@
+
+
+#hddiv {
+    width: 85%;
+    position: relative;
+    background: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    margin: 1.5em auto;
+    border: 3px solid rgba(0, 0, 0, 0.08);
+    background-color: #3f51b5;
+  }
+  #hddiv img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 0px solid #007bff;
+    
+  }
+  /* #3f51b5!important; */
+.mainHding h1 {
+    font-size:46px; 
+    font-weight:7000;  
+    text-align: center;
+    letter-spacing:1px; 
+    text-transform:uppercase; 
+    /* width:160px;   */
+    color: white;
+    flex-shrink: 1;
+    margin:auto; 
+    white-space:nowrap; 
+    padding-bottom:13px; 
+  }
+  /* .mainHding h1:before {
+      background-color: white;
+      content: '';
+      display: block;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 5px;
+  }
+  .mainHding h1:after {
+      background-color: white;
+      content: '';
+      display: block;
+      height: 3px;
+      width: 75px;
+      margin-left: 185px;
+      
+  } */
+
+
+.container{
+    width: 90%;
+    border: 2px solid #3f51b5;
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#budget{
+    border: 2px solid #3f51b5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(142, 166, 243) ;
+}
+/* 
+#budget :hover{
+  display: none;
+} */
+
+#totalbudgetinoutfield {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 20px 20px 60px #c5c5c5;
+    transition: 0.3s;
+   }
+   
+   .input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+    inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+   
+
+#viewdivs{
+    width: 90%;
+    border: 2px solid #3f51b5;
+    display: flex;    
+    margin: auto ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: #3f51b5;
+    gap: 10px;;
+
+}
+.values{
+  margin: auto;
+  background-color: white;
+  width: 150px;
+  display: flex;     
+ flex-direction: column;
+ align-items: center;
+ border-radius: 10px;
+ flex-wrap: wrap;
+}
+
+.values h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(149, 186, 235);
+  
+}
+.showValues{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: -10px;
+  font-size: 30px;
+}
+
+/* Add Form Css */
+.form {
+    display: flex;    
+    gap: 10px;
+    margin: 2px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+
+
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 170px;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label  .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label  .input:placeholder-shown + span {
+    top:  15px;
+    font-size: 0.9em;
+  }
+  
+  .form label  .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+
+  
+  
+  .form label  .input:valid + span {
+    color: rgb(7, 67, 104);
+  }
+  
+  .submit {
+    --color: #3f51b5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    cursor: pointer;
+   }
+
+
+   
+   .submit:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .submit:hover {
+    color: #fff;
+   }
+   
+   .submit:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .submit:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .submit:active:before {
+    background: #3f51b5;
+    transition: background 0s;
+   }
+
+  #expense{
+    display: flex;
+    width: 100%;
+   background-color: #3f51b5 ;
+    justify-content: center;
+  
+  }
+
+  .tblcontainer{
+    padding: 5px;
+    width: 90%;
+    border: 2px solid #3f51b5;
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  #tblmain{
+    border: 1px solid black;
+    width: 100%;
+    
+  }
+  #tblmain tr th {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background-color: #3f51b5;
+   color: rgb(243, 239, 239);
+   font-size: 20px;
+  }
+
+  td{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  #tblmain :hover {background-color: rgb(217, 220, 240);}
+
+  .submit1 {
+    --color: #3f51b5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+  
+    height: 2.6em;
+    line-height: 2.5em;
+    
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    cursor: pointer;
+   }
+
+
+   
+   .submit1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .submit1:hover {
+    color: #fff;
+   }
+   
+   .submit1:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .submit1:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .submit1:active:before {
+    background: #3f51b5;
+    transition: background 0s;
+   }
+
+

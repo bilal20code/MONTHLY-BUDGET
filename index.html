@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Monthly Budget Web App</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <div class="mainHding" id="hddiv">
+        <a href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG1Uujji7IHSNISOXZQGpX3CyoBoXXZMnGIdWbLn7fEKSRMrBGG8rkv2D6j14W7zznwxQ&usqp=CAU" alt="Logo">
+        </a>
+        <h1>Monthly Budget</h1>
+        
+      </div>
+
+      <div id="viewdivs">
+        <div class="values" id="TotalBudgetValue">
+            <h2>Total Budget</h2>
+            <p class="showValues" id="ShowTotalBudget">0</p>
+        </div>
+        <div class="values" id="TotalExpenseValue">
+            <h2>Total Expense</h2>
+            <p class="showValues" id="ShowTotalExp">0</p>
+        </div>
+        <div class="values" id="TotalRemainingBalance">
+            <h2>Balance</h2>
+            <p class="showValues"  id="ShowTotalBalance">0</p>
+        </div>
+
+    </div>
+    <div class="container">
+        <div id="budget">
+            <table>                
+                <tr>                   
+                    <td> <input type="number" name="text" id="totalbudgetinoutfield" placeholder="Add Budget Here"></td>
+                    <td><button class="submit" id="btnaddBudget"> Add Budget </button></td>                    
+                </tr>
+            </table>
+           
+        </div>
+      
+        <div id="expense">
+            <form class="form">                          
+                <label>
+                    <select class="input" id="categoryinputfield">
+                        <option>Category:</option>
+                        <option>House Rent</option>
+                        <option>K-electric & Gas Bill</option>
+                        <option>Raza Conveyance </option>
+                        <option>Bike Conveyance</option>
+                        <option>Net Package</option>
+                        <option>Chicken </option>
+                        <option>Doodh & Dahi</option>
+                        <option>Aata 30KG</option>
+                        <option>Rice(chaaal) 10KG</option>
+                        <option>Biryani Rice 5KG</option>
+                        <option>Oil khany wala</option>
+                        <option>Sugar</option>
+                        <option>General Store</option>
+                        <option>Daals</option>
+                        <option>gahrelo kharcha</option>
+                        <option>Bilal B </option>
+                        <option>Sadqa</option>
+                        <option>Refreshment</option>
+                        <option>Niyaz saman</option>
+                    </select>   
+                    <span>Category</span>             
+                </label> 
+
+                
+                
+                        
+                <label>
+                    <input required="" placeholder="" type="text" class="input" id="descrpinputfield">
+                    <span>Description</span>
+                </label> 
+                    
+                <label>
+                    <input required="" placeholder="" type="number" class="input" id="expenseinputfield">
+                    <span>Total Amount</span>
+                </label>
+                <label>
+                    <input required="" placeholder="" type="date" class="input" id="dtpinputfied">
+                    
+                </label>
+                <button class="submit1" id="btnAddExpense">Add Expense</button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="tblcontainer">
+        <table id="tblmain">
+            <tr>
+                <th>S.No</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Expense Amount</th>
+                <th>Date</th>
+            </tr>
+        </table>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
